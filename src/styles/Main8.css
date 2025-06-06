@@ -1,0 +1,188 @@
+.main8 {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                      url("../assets/image1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+  .main8 h1{
+    color: rgba(168, 168, 168, 0.274);
+    font-size: 10rem;
+    text-transform: uppercase;
+    position: absolute;
+    font-family: "Prompt";
+    font-weight: 600;
+    letter-spacing: 2px;
+    top: 50%;
+    left: -100%;
+    transform: translateY(-50%);
+    animation: moves 15s linear infinite;
+    white-space: nowrap;
+  }
+
+  .main8-bottom{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+    gap: 2rem;
+  }
+  .main8-bottom h2{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem !important;
+  }
+  @keyframes moves {
+    from{
+        left: -100%;
+    }to{
+        left: 100%;
+    }
+  }
+  @media only screen and (max-width: 1100px){
+    .main8{
+        height: 90vh;
+    }
+    .main8 h1{
+        font-size: 9rem;
+    }
+    .main8-bottom h2{
+       font-size: 2rem !important;
+      }
+      .main8-bottom{
+        height: 230px;
+      }
+  }
+  @media only screen and (max-width: 1000px){
+    .main8{
+        height: 80vh;
+    }
+    .main8 h1{
+        font-size: 8rem;
+    }
+    .main8-bottom h2{
+        font-size: 1.8rem !important;
+       }
+    .main8-bottom{
+        height: 220px;
+        gap: 1.8rem;
+    }
+  }
+  
+  @media only screen and (max-width: 900px){
+    .main8{
+        height: 70vh;
+    }
+    .main8 h1{
+        font-size: 7rem;
+    }
+    .main8-bottom h2{
+        font-size: 1.6rem !important;
+       }
+       .main8-bottom{
+        height: 200px;
+        gap: 1.6rem;
+    }
+  }
+  @media only screen and (max-width: 800px){
+    .main8{
+        height: 60vh;
+    }
+    .main8 h1{
+        font-size: 6rem;
+    }
+    .main8-bottom h2{
+        font-size: 1.4rem !important;
+       }
+       .main8-bottom{
+        height: 190px;
+        gap: 1.4rem;
+    }
+  }
+  @media only screen and (max-width: 700px){
+    .main8{
+        height: 50vh;
+    }
+    .main8 h1{
+        font-size: 5rem;
+    }
+    .main8-bottom h2{
+        font-size: 1.2rem !important;
+       }
+       .main8-bottom{
+        height: 170px;
+        gap: 1.2rem;
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .main8{
+        height: 40vh;
+    }
+    .main8 h1{
+        font-size: 4rem;
+    }
+    .main8-bottom h2{
+        font-size: 1rem !important;
+       }
+       .main8-bottom{
+        height: 160px;
+        gap: 1rem;
+    }
+  }
+  
+  @media only screen and (max-width: 500px){
+    .main8{
+        height: 35vh;
+    }
+    .main8 h1{
+        font-size: 3rem;
+    }
+    .main8-bottom h2{
+        font-size: 0.9rem !important;
+       }
+       .main8-bottom{
+        height: 140px;
+        gap: 1rem;
+    }
+  }
+  @media only screen and (max-width: 400px){
+    .main8{
+        height: 30vh;
+    }
+    .main8 h1{
+        font-size: 2rem;
+    }
+    .main8-bottom h2{
+        font-size: 0.9rem !important;
+       }
+       .main8-bottom{
+        height: 120px;
+        gap: .8rem;
+    }
+  }
+  @media only screen and (max-width: 330px){
+    .main8{
+        height: 30vh;
+    }
+    .main8 h1{
+        font-size: 1.5rem;
+    }
+    .main8-bottom h2{
+        font-size: 0.8rem !important;
+       }
+       .main8-bottom{
+        height: 100px;
+        gap: .6rem;
+    }
+  }
+  

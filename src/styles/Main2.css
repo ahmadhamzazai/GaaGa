@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main2{
+    position: relative;
+    top: 15px;
+    width: 88%;
+    background-color: black;
+}
+.main2-child{
+    padding: 10px;
+}
+p,h3{
+    margin: 0;
+    padding: 0;
+}
+p{
+    color: #A0ADB5;
+}
+
+@media only screen and (max-width: 1340px) {
+    .main2{
+        width: 90%;
+    }
+    h3{
+        font-size: 1.65rem !important;
+    }
+}
+@media only screen and (max-width: 1330px) {
+    .main2{
+        width: 92%;
+    }
+    h3{
+        font-size: 1.55rem !important;
+    }
+}
+@media only screen and (max-width: 1320px) {
+    .main2{
+        width: 94%;
+    }
+    h3{
+        font-size: 1.45rem !important;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .main2{
+        flex-flow: row wrap;
+    }
+    .main2-child{
+        padding: 30px;
+    }
+    .main2-child1, .main2-child2{
+        width: 50%;
+    }
+    .main2-icons * {
+        width: 90px;
+        height: 90px;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .main2-icons * {
+        width: 80px !important;
+        height: 80px !important;
+    }
+}
+@media only screen and (max-width: 890px){
+    .main2-child{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 570px){
+    .main2-child{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main2-child:nth-child(even){
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
+    }
+    p,h3{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 420px){
+    h3{
+        font-size: 1.35rem !important;
+    }
+    .main2-child{
+        padding: 25px !important;
+    }
+}
+@media only screen and (max-width: 400px){
+    h3{
+        font-size: 1.3rem !important;
+    }
+    .main2-child{
+        padding: 20px !important;
+    }
+}

@@ -1,0 +1,358 @@
+.headers {
+  padding: 20px 60px 20px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(30px);
+  border-bottom: 0.3px solid #eeeeee62;;
+}
+.dot {
+  color: var(--primary);
+  font-size: 30px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.dot1 {
+  color: white;
+}
+.gaaga {
+  font-size: 2.7rem;
+  cursor: pointer;
+}
+.gaa {
+  color: var(--primary);
+}
+.menu-home li {
+  transition: all 0.5s;
+  font-size: 14px;
+  letter-spacing: 3px;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+}
+.menu-home li:hover {
+  cursor: pointer;
+  color: var(--primary);
+}
+
+.right {
+  border: 0.5px solid #717171;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  padding: 15px 30px !important;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.lets-start {
+  color: white;
+  transition: all 0.5s ease;
+}
+.right:hover {
+  border-color: var(--primary);
+}
+.right:hover .lets-start {
+  color: var(--primary);
+}
+.right:hover .dot {
+  color: white;
+}
+.lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+}
+.lines:hover .line1 {
+  transform: translate(-1px, 4px) rotate(-45deg);
+}
+.lines:hover .line2 {
+  transform: translate(8px, 9px) rotate(-45deg);
+  background-color: var(--primary);
+}
+.lines:hover .line3 {
+  transform: translate(16px, 14px) rotate(-45deg);
+}
+.line {
+  width: 40px;
+  height: 3px;
+  border-radius: 50px;
+  background-color: white;
+}
+.line1 {
+  transform: translateX(-3px) rotate(-45deg);
+  transition: all 0.5s ease;
+}
+.line2 {
+  transform: translateX(17px) rotate(-45deg);
+  transition: all 0.5s ease;
+}
+.line3 {
+  transform: translate(25px, 13px) rotate(-45deg);
+  transition: all 0.5s ease;
+}
+.menu {
+  cursor: pointer;
+}
+.menu * {
+  display: none;
+}
+.menu-close {
+  display: none;
+}
+.minus {
+  opacity: 0;
+  display: none;
+}
+.chevron {
+  display: none;
+}
+.popup {
+  display: none;
+}
+@media only screen and (max-width: 1300px) {
+  .menu-home li {
+    display: none;
+  }
+  .popup {
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: start !important;
+    align-items: start !important;
+    gap: 0 !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 300px;
+    height: 100vh;
+    background-color: black;
+    padding: 0;
+  }
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+    opacity: 0;
+  }
+  .popup li {
+    width: 100%;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: normal;
+    border-bottom: 1px solid #2c2c2c;
+    list-style: none;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .popup li:hover {
+    background-color: var(--primary);
+    color: white;
+  }
+  .minus {
+    color: white !important;
+    font-size: 25px;
+    transition: all 0.7s;
+    display: none;
+  }
+  .chevron {
+    color: white !important;
+    font-size: 25px;
+    transform: translateX(-10px);
+    transition: all 0.7s;
+    display: block;
+  }
+  .popup li:hover .minus {
+    transform: translate(15px);
+    display: block;
+    opacity: 1;
+  }
+  .popup li:hover .chevron {
+    transform: translate(0px);
+  }
+  .menu-close {
+    display: block;
+    font-size: 25px;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    right: 0;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+  }
+  .menu-close:hover {
+    color: var(--primary);
+  }
+  .cross{
+    transition: all .5s;
+  }
+  .cross:hover{
+    rotate: 180deg;
+    scale: 1.3;
+  }
+  .lines {
+    display: none;
+  }
+  li {
+    font-size: 14px;
+  }
+  .gaaga {
+    font-size: 2.3rem;
+  }
+  .right {
+    padding: 13px 25px;
+  }
+  .menu * {
+    display: flex;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .headers {
+    padding: 19px 21px;
+  }
+  .gaaga {
+    font-size: 2.3rem;
+  }
+  .popup {
+    width: 290px;
+  }
+  .popup li {
+    font-size: 1rem !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .headers {
+    padding: 18px 20px;
+  }
+  .gaaga {
+    font-size: 2.1rem;
+  }
+  .purchase {
+    display: none !important;
+  }
+  .popup {
+    width: 280px;
+  }
+  .popup li {
+    padding: 9px 10px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .headers {
+    padding: 16px 18px;
+  }
+  .gaaga {
+    font-size: 1.7rem;
+  }
+  .popup {
+    width: 260px;
+  }
+  .popup li {
+    padding: 10px !important;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .headers {
+    padding: 15px 17px;
+  }
+  .gaaga {
+    font-size: 1.6rem;
+  }
+  .popup {
+    width: 240px;
+  }
+  .popup li {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .headers {
+    padding: 14px 16px;
+  }
+  .gaaga {
+    font-size: 1.5rem;
+  }
+  .popup {
+    width: 220px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .headers {
+    padding: 13px 16px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .headers {
+    padding: 12px 16px;
+  }
+  .popup {
+    width: 200px;
+  }
+  .gaaga {
+    font-size: 1.4rem !important;
+  }
+  .popup li {
+    padding: 8px 9px !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .headers {
+    padding: 10px 16px;
+  }
+  .popup {
+    width: 180px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .headers {
+    padding: 8px 16px;
+  }
+  .gaaga {
+    font-size: 1.3rem;
+  }
+  .popup {
+    width: 170px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .headers {
+    padding: 4px 16px;
+  }
+  .gaaga {
+    font-size: 1.3rem !important;
+  }
+  .popup {
+    width: 160px;
+  }
+  .text-menu{
+    display: none;
+  }
+  .menu-icon{
+    width: 22px;
+    height: 22px;
+    transition: all 0.5s;
+  }
+  .menu-icon:hover{
+    width: 24px;
+    height: 24px;
+    color: var(--primary);
+  }
+}
+@media only screen and (max-width: 350px) {
+  .popup {
+    width: 100vw;
+  }
+}

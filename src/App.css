@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #dd4242;
+}
+body {
+  background-color: black !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "Prompt", sans-serif;
+
+}
+.main{
+  position: absolute;
+  top: 0;
+  z-index: -5;
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+
+
+
+
+

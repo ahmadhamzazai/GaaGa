@@ -1,0 +1,98 @@
+.main-5{
+    background-color: #15171C;
+    padding-top: 6rem;
+}
+.main-5-1{
+    width: 60%;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.16;
+}
+.main-5-1 img{
+    border-radius: 50px;
+}
+.main-5-2{
+    width: 80%;
+    margin: auto;
+}
+.number {
+    font-size: 6rem;
+    font-weight: 500;
+    -webkit-text-stroke: 1px #B3B3B5;
+    color: transparent;
+    transition: -webkit-text-stroke 0.5s, color 0.5s;
+}
+.titles{
+    font-size: 1.1rem;
+    color: #B3B3B5;
+}
+.number:hover {
+    -webkit-text-stroke: 1px #dd4242;
+    color: #dd4242;
+}
+@media only screen and (max-width: 1400px){
+    .main-5-2{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 1300px){
+    .main-5-1{
+        width: 65%;
+        font-size: 38px;
+    }
+    .main-5-2{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 1250px){
+    .main-5-1{
+        width: 70%;
+        font-size: 36px;
+    }
+}
+@media only screen and (max-width: 1199px){
+    .main-5-1{
+        width: 75%;
+        font-size: 34px;
+    }
+    .main-5-2{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 1150px){
+    .main-5-1{
+        font-size: 32px;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 1000px){
+    .main-5-1{
+        font-size: 30px;
+        width: 85%;
+    }
+    .number{
+        font-size: 5rem;
+    }
+    .titles{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width: 800px){
+    .main-5-1{
+        font-size: 28px;
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .main-5-1{
+        font-size: 28px;
+        width: 90%;
+    }
+    .number{
+        font-size: 4.5rem;
+    }
+    .titles{
+        font-size: 0.9rem;
+    }
+}

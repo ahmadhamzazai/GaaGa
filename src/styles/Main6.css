@@ -1,0 +1,183 @@
+.servicess {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100vw;
+    margin: auto;
+    padding-top: 4rem;
+  }
+  
+  .parallax-bg {
+    position: fixed; 
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.82)), 
+    url('https://media.istockphoto.com/id/1125743026/photo/office-workers-in-the-meeting.jpg?s=612x612&w=0&k=20&c=0ORd7e4HljORGRdA0O_vEpwfSv20xhD-8lx5XnY0A7E='); 
+
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+    pointer-events: none;
+    filter: grayscale(70%);
+  }
+  
+  
+  .services-top,
+  .services-bottom {
+    position: relative;
+    z-index: 1;
+  }
+  .services-top{
+    margin-bottom: 3rem;
+  }
+  .services-bottom h3{
+    color: white;
+    font-weight: 700;
+    width: 100%;
+  }
+  .services-bottom p{
+    color: #A5A5A6;
+    font-size: 13px;
+    width: 100%;
+  }
+
+  .services-col{
+    border-right: 1px solid #7b7b7da4;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+}
+.sb-child-top{
+    padding: 0 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.sb-child-bottom{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.sb-child-top h3{
+    transition: color .2s ease-in-out;
+}
+.sb-child-bottom .sliding{
+    padding: 7rem 4rem 7rem;
+}
+.services-col img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    scale: 0.7;
+    opacity: 0;
+    margin: auto;
+    transition: scale .2s ease-in-out, opacity .2s ease-in-out;
+}
+.services-col:hover img{
+    scale: 1;
+    opacity: 1;
+}
+.services-col:hover .sb-child-top h3{
+    color: var(--primary);
+}
+@media only screen and (max-width: 1650px){
+    .sb-child-top{
+        padding: 0 4rem 2rem;
+    }
+}
+@media only screen and (max-width: 1550px){
+    .sb-child-top{
+        padding: 0 4rem 2rem;
+    }
+}
+@media only screen and (max-width: 1450px){
+    .sb-child-top{
+        padding: 0 4rem 1rem;
+    }
+}
+@media only screen and (max-width: 1400px){
+    .sb-child-top{
+        padding: 0 4rem .5rem;
+    }
+}
+@media only screen and (max-width: 1350px){
+    .sb-child-top{
+        padding: 0 4rem 0;
+    }
+    .sb-child-bottom .sliding{
+        padding: 6rem 4rem 6rem;
+    }
+}
+@media only screen and (max-width: 1300px){
+    .sb-child-bottom .sliding{
+        padding: 6rem 4rem 6rem;
+    }
+    
+}
+@media only screen and (max-width: 1199px){
+    .services-col img{
+        padding: 4rem;
+    }
+    .services-col{
+        border-right: none;
+    }
+    .sb-child-bottom .sliding{
+        padding: 9rem 4rem 9rem;
+    }
+}
+@media only screen and (max-width: 800px){
+    .sb-child-bottom .sliding{
+        padding: 8rem 4rem 8rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .sb-child-bottom .sliding{
+        padding: 9rem 4rem 14rem;
+        margin: auto;
+    }
+    .sb-child-bottom p,h3{
+        text-align: center !important;
+    }
+    .services-col{
+        border-bottom: 1px solid gray;
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 700px){
+    .services-col img{
+        padding: 4rem;
+    }
+}
+@media only screen and (max-width: 575px){
+    .sb-child-bottom .sliding{
+        padding: 10rem 4rem 13rem;
+    }
+}
+@media only screen and (max-width: 500px){
+    .sb-child-bottom .sliding{
+        padding: 10rem 4rem 10rem;
+    }
+}
+@media only screen and (max-width: 460px){
+    .sb-child-bottom .sliding{
+        padding: 10rem 4rem 8rem;
+    }
+}
+@media only screen and (max-width: 420px){
+    .sb-child-bottom .sliding{
+        padding: 10rem 4rem 8rem;
+    }
+}
+@media only screen and (max-width: 380px){
+    .sb-child-bottom .sliding{
+        padding: 10rem 4rem 7rem;
+    }
+}
+@media only screen and (max-width: 380px){
+    .sb-child-bottom .sliding{
+        padding: 8rem 4rem 5rem;
+    }
+}

@@ -1,0 +1,45 @@
+.sliding{
+    width: max-content;
+    cursor: pointer;
+}
+.stick{
+    width: 40px;
+    height: 1px;
+    background-color: gray;
+    border-radius: 2px;
+    transition: all 1s;
+
+}
+.stick-left{
+    width: 0;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary);
+    border-radius: 40px;
+}
+.sliding-text{
+    color: white;
+}
+.sliding:hover .stick-right{
+    width: 0px;
+}
+.sliding:hover .stick-left{
+    width: 40px;
+}
+@media only screen and (max-width: 400px){
+    .sliding-text{
+        font-size: 13px !important;
+    }
+}
+@media only screen and (max-width: 350px){
+    .sliding-text{
+        font-size: 12px !important;
+    }
+}
+@media only screen and (max-width: 300px){
+    .sliding-text{
+        font-size: 11px !important;
+    }
+}
