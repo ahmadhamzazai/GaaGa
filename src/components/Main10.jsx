@@ -1,11 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Dot from "../assets/Dot.jsx"
 import "../styles/Main10.css"
 import { GoDotFill } from 'react-icons/go';
+import toast, { Toaster } from 'react-hot-toast';
+import { FaHeart } from "react-icons/fa";
+import { FaHeartCrack } from "react-icons/fa6";
 
 const Main10 = () => {
+  const [value, setValue] = useState("")
+  const submitValue = () => {
+    if(value.trim() === ""){
+      toast.error(
+        <span className="py-1 px-3 text-black">
+          Please enter something <FaHeartCrack color="#dd4242" size={25} />
+        </span>
+      );
+      setValue("")
+    }else{
+    toast.success(
+      <span className="py-1 px-3 text-black">
+        Thanks for your reply <FaHeart color="#dd4242" size={25} />
+      </span>
+    );
+    setValue("")
+  }
+  }
   return (
     <>
+    <Toaster/>
       <div name="contact-us" className="footer container-fluid">
         <div className="row footer-row">
           <div className="col-lg-6 col-md-6 col-sm-6 col-12">
@@ -22,10 +44,10 @@ const Main10 = () => {
               vulputate mi sit amet.
             </p>
             <div className="subscribe">
-              <input type="text" />
+              <input type="text" value={value} onChange={(e)=>setValue(e.target.value)}/>
               <div className="sub-bottom">
                 <div className="red-circle"></div>
-                <button className="p-0 m-0 bg-transparent border-0">
+                <button type='button' onClick={submitValue} className="p-0 m-0 bg-transparent border-0">
                   <h5>Subscribe</h5>
                 </button>
               </div>

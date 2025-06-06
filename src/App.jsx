@@ -7,7 +7,9 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/GaaGa" element={<Home />} />
+        <Route path="/GaaGa/" element={<Home />} />
+        <Route path="*" element={<div>404 - Page Not Found For This Link</div>} />
       </Routes>
     </Router>
   );
